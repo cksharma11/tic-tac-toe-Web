@@ -58,7 +58,7 @@ const isSubsetOf = function(superset, subsetCandidate) {
   });
 };
 
-const isPlaceEmpty = function(event) {
+const startGame = function(event) {
   if (document.getElementById(event.target.id).innerText == '') {
     getCurrentPayer();
     placeSymbol(event);
