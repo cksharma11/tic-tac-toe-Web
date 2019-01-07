@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <div id='game_title'>
+      <h1 style="text-align: center">~~~ TIC-TAC-TOE ~~~</h1>
+    </div>
+    <div id='current_player' class="player_name">Player 1's Move </div>
+    <div class="board" id="board">
+      <div class="row1" style="display:flex; flex-wrap: wrap">
+          <div id=1 class="box" onclick="isPlaceEmpty(event)"></div>
+          <div id=2 class="box" onclick="isPlaceEmpty(event)"></div>
+          <div id=3 class="box" onclick="isPlaceEmpty(event)"></div>
+        </div>
+        <div class="row2" style="display:flex">
+            <div id=4 class="box" onclick="isPlaceEmpty(event)"></div>
+            <div id=5 class="box" onclick="isPlaceEmpty(event)"></div>
+            <div id=6 class="box" onclick="isPlaceEmpty(event)"></div>
+          </div>
+          <div class="row3" style="display:flex">
+        <div id=7 class="box" onclick="isPlaceEmpty(event)"></div>
+        <div id=8 class="box" onclick="isPlaceEmpty(event)"></div>
+        <div id=9 class="box" onclick="isPlaceEmpty(event)"></div>
+      </div>
+    </div>
+    <div class="result">
+      <h1 id='result' style="text-align: center"></h1>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
