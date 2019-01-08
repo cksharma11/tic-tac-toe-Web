@@ -11,13 +11,12 @@ const winningConditions = [
 ];
 
 const result = document.getElementById('result');
-console.log(result);
 const moves = [[], []];
 
 let moveCount = 0;
 const colors = ['green', 'yellow'];
-const player1 = prompt('Player 1 Name : ');
-const player2 = prompt('Player 2 Name : ');
+const player1 = document.getElementById('player1');
+const player2 = document.getElementById('player2');
 const players = [player2, player1];
 
 const getCurrentPayer = function() {
