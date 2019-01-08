@@ -15,8 +15,8 @@ const moves = [[], []];
 
 let moveCount = 0;
 const colors = ['green', 'yellow'];
-const player1 = document.getElementById('player1');
-const player2 = document.getElementById('player2');
+const player1 = prompt('Enter the name of first player');
+const player2 = prompt('Enter the name of second player');
 const players = [player2, player1];
 
 const getCurrentPayer = function() {
@@ -61,7 +61,5 @@ const startGame = function(event) {
   if (document.getElementById(event.target.id).innerText == '') {
     getCurrentPayer();
     placeSymbol(event);
-  } else {
-    alert('Place already occupied!');
   }
 };
